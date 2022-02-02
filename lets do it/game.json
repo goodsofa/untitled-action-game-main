@@ -446,15 +446,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "NewObject-1-4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewObject-1-4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "NewObject-2-2.png",
         "kind": "image",
         "metadata": "",
@@ -1244,6 +1235,15 @@
         "name": "NewFile-1-2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-4.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1352,7 +1352,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -1360,8 +1360,8 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": true,
-        "zoomFactor": 0.47000000000000003,
+        "snap": false,
+        "zoomFactor": 1.0900000000000007,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1421,6 +1421,9 @@
             },
             {
               "name": "testing_thingy"
+            },
+            {
+              "name": "invisible_hitbox_for_theplayer"
             }
           ]
         },
@@ -1432,6 +1435,9 @@
             },
             {
               "name": "shootingtrap"
+            },
+            {
+              "name": "invisible_hitbox_for_theplayer"
             }
           ]
         },
@@ -1454,6 +1460,9 @@
             },
             {
               "name": "testing_thingy"
+            },
+            {
+              "name": "invisible_hitbox_for_theplayer"
             }
           ]
         },
@@ -1468,6 +1477,9 @@
             },
             {
               "name": "lightblocker"
+            },
+            {
+              "name": "invisible_hitbox_for_theplayer"
             }
           ]
         }
@@ -1509,8 +1521,8 @@
           "name": "player",
           "persistentUuid": "829f69f5-d638-4a8e-8af2-f538f5cf3aa3",
           "width": 0,
-          "x": 425.77777099609375,
-          "y": 396.3333435058594,
+          "x": 458.77777099609375,
+          "y": 403.3333435058594,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -1842,7 +1854,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "bigboitest",
+          "name": "bigboi_debug",
           "persistentUuid": "3e223b27-b94b-4a24-b6da-a18da75eb47c",
           "width": 0,
           "x": 475,
@@ -2030,15 +2042,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "0344606c-8c63-4b41-87cd-368f35b28f83",
-          "width": 0,
-          "x": -192,
-          "y": 1088,
+          "width": 1,
+          "x": -129,
+          "y": 1151,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -2046,15 +2058,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "5b8dd389-4691-4f90-b55a-423157d8ce51",
-          "width": 0,
+          "width": 64,
           "x": -128,
-          "y": 1088,
+          "y": 1151,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -2062,15 +2074,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "d7d9bb45-b94a-43ad-8608-05ebd77a01f3",
-          "width": 0,
+          "width": 64,
           "x": -64,
-          "y": 1088,
+          "y": 1151,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -2078,15 +2090,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "170689fc-6e5b-427e-8032-e9fa2d93c2f7",
-          "width": 0,
+          "width": 64,
           "x": 0,
-          "y": 1088,
+          "y": 1151,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -2094,15 +2106,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "b7bebc14-eec5-4140-8755-554fcc9087ba",
-          "width": 0,
+          "width": 64,
           "x": 64,
-          "y": 1088,
+          "y": 1151,
           "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
@@ -2110,15 +2122,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "3c6f9500-27ec-4dab-bfc9-4e962e80becc",
-          "width": 0,
+          "width": 64,
           "x": 128,
-          "y": 1088,
+          "y": 1151,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -2126,15 +2138,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "aa8e3a79-6c3d-463f-9c40-bf5b0f2a7458",
-          "width": 0,
+          "width": 1,
           "x": 192,
-          "y": 1088,
+          "y": 1151,
           "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
@@ -2142,13 +2154,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "f711b33d-d9c2-44e1-a407-2f71661a3074",
-          "width": 0,
+          "width": 1,
           "x": 192,
           "y": 1152,
           "zOrder": 26,
@@ -2158,13 +2170,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "1e421c4a-ab5c-44e8-a082-7cdb1ef1d04d",
-          "width": 0,
+          "width": 1,
           "x": 192,
           "y": 1216,
           "zOrder": 27,
@@ -2174,13 +2186,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "b20b2229-8510-4bc4-980b-7e7647e44152",
-          "width": 0,
+          "width": 1,
           "x": 192,
           "y": 1280,
           "zOrder": 28,
@@ -2190,14 +2202,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "7dca15b0-2dee-4245-9484-8daca7866258",
-          "width": 0,
-          "x": 64,
+          "width": 1,
+          "x": 127,
           "y": 1280,
           "zOrder": 29,
           "numberProperties": [],
@@ -2206,13 +2218,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "e92dd2e8-ea6d-4d9b-8293-9b2130b8d8a9",
-          "width": 0,
+          "width": 64,
           "x": 64,
           "y": 1216,
           "zOrder": 30,
@@ -2222,13 +2234,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "88bda13f-9f85-4128-96b1-93581f2724b0",
-          "width": 0,
+          "width": 64,
           "x": 0,
           "y": 1216,
           "zOrder": 31,
@@ -2238,13 +2250,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "378efd9f-4c29-4761-9c7f-512090c1edf8",
-          "width": 0,
+          "width": 64,
           "x": -64,
           "y": 1216,
           "zOrder": 32,
@@ -2254,15 +2266,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 66,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "e5c6467c-ee58-4a5f-9cc5-1aff57a62004",
-          "width": 0,
-          "x": -64,
-          "y": 1280,
+          "width": 1,
+          "x": -63,
+          "y": 1216,
           "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
@@ -2270,14 +2282,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "77fcb524-3306-4d92-8bee-96eb440ef3e3",
-          "width": 0,
-          "x": -192,
+          "width": 1,
+          "x": -129,
           "y": 1152,
           "zOrder": 34,
           "numberProperties": [],
@@ -2286,14 +2298,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "dd740700-4be1-43c6-a963-206d79a7acef",
-          "width": 0,
-          "x": -192,
+          "width": 1,
+          "x": -129,
           "y": 1216,
           "zOrder": 35,
           "numberProperties": [],
@@ -2302,14 +2314,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "e223b27c-4e7b-4c65-af50-145477cf008c",
-          "width": 0,
-          "x": -192,
+          "width": 1,
+          "x": -129,
           "y": 1280,
           "zOrder": 36,
           "numberProperties": [],
@@ -2318,13 +2330,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 1,
           "layer": "",
           "locked": false,
           "name": "lightblocker",
           "persistentUuid": "a2920ff6-1469-480a-9ccd-622a658f06a2",
-          "width": 0,
+          "width": 66,
           "x": -128,
           "y": 1280,
           "zOrder": 37,
@@ -2357,7 +2369,7 @@
           "name": "sunlight",
           "persistentUuid": "e3ea72dc-7d89-4e3a-a177-b49d5542470a",
           "width": 0,
-          "x": 704,
+          "x": 677,
           "y": 1184,
           "zOrder": 39,
           "numberProperties": [],
@@ -2376,22 +2388,6 @@
           "x": -20,
           "y": 1492,
           "zOrder": 40,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "lightblocker",
-          "persistentUuid": "c995bb3a-931e-4fd6-955e-965ffdfffacd",
-          "width": 0,
-          "x": 576,
-          "y": 1312,
-          "zOrder": 41,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2459,6 +2455,166 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Lighting",
+          "locked": false,
+          "name": "sunlight",
+          "persistentUuid": "ed61344a-0a4d-4856-a76f-85ccf8eb7254",
+          "width": 0,
+          "x": -84,
+          "y": 556,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "locked": false,
+          "name": "lightblocker",
+          "persistentUuid": "4a43e26d-7767-4ed9-b744-b6617fd9e252",
+          "width": 1,
+          "x": 127,
+          "y": 1217,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_hitbox_for_theplayer",
+          "persistentUuid": "8df5a65a-c816-4c5c-9c26-871c2430add2",
+          "width": 0,
+          "x": -96,
+          "y": 1280,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_hitbox_for_theplayer",
+          "persistentUuid": "bc874df4-9703-41de-98bf-c70e68e739a2",
+          "width": 0,
+          "x": -64,
+          "y": 1248,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_hitbox_for_theplayer",
+          "persistentUuid": "667e812f-c060-4ae4-a41e-0c45a51620bd",
+          "width": 0,
+          "x": 64,
+          "y": 1248,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_hitbox_for_theplayer",
+          "persistentUuid": "9139c6f9-d895-4674-b3d5-74b1956621d2",
+          "width": 0,
+          "x": 160,
+          "y": 1088,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_hitbox_for_theplayer",
+          "persistentUuid": "d4c09d45-8e57-4c8d-87a4-270731ac89c9",
+          "width": 0,
+          "x": -192,
+          "y": 1120,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_hitbox_for_theplayer",
+          "persistentUuid": "2f6ebae4-9e93-4eb2-855a-2c2137b28231",
+          "width": 0,
+          "x": -192,
+          "y": 1248,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 117,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_hitbox_for_theplayer",
+          "persistentUuid": "8934ea07-2b32-4356-a9aa-355128c0fb3d",
+          "width": 65,
+          "x": 490,
+          "y": 137,
+          "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "dash_debug",
+          "persistentUuid": "6c2a6d6c-5666-427d-accb-a43bef9527b2",
+          "width": 0,
+          "x": 477,
+          "y": 293,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2490,6 +2646,11 @@
             },
             {
               "name": "is_dashing",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "dash_direction",
               "type": "string",
               "value": ""
             }
@@ -4657,12 +4818,12 @@
                             "y": 23.899999618530273
                           },
                           {
-                            "x": 41.20000076293945,
-                            "y": 24.200000762939453
+                            "x": 40.79999923706055,
+                            "y": 23.899999618530273
                           },
                           {
-                            "x": 41.29999923706055,
-                            "y": 39
+                            "x": 40.79999923706055,
+                            "y": 38.5
                           },
                           {
                             "x": 22.200000762939453,
@@ -4779,7 +4940,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "bigboitest",
+          "name": "bigboi_debug",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -4787,7 +4948,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Text",
+          "string": "bigboicharge",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -5106,6 +5267,95 @@
             "color": "29;43;143",
             "debugMode": false,
             "texture": ""
+          }
+        },
+        {
+          "name": "invisible_hitbox_for_theplayer",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "lightblocker-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "NewObject",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewObject-1-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "dash_debug",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "dash",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         }
       ],
@@ -5531,124 +5781,161 @@
               "events": []
             },
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "name": "dash",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Right"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "player",
+                        "player.Variable(dash_direction)",
+                        "500",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "player",
+                        "\"dashtime_cooldown\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "player",
+                        "is_dashing",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 },
                 {
-                  "type": {
-                    "inverted": true,
-                    "value": "Arret"
-                  },
-                  "parameters": [
-                    "player"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Arret"
+                      },
+                      "parameters": [
+                        "player"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "dash_direction",
+                        "=",
+                        "player.ForceAngle()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "player",
+                        "\"dashtime_cooldown\"",
+                        ">",
+                        "0.12"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Arreter"
+                      },
+                      "parameters": [
+                        "player"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "player",
+                        "is_dashing",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "AddForceAL"
-                  },
-                  "parameters": [
-                    "player",
-                    "player.ForceAngle()",
-                    "500",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "player",
-                    "\"dashtime_cooldown\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "player",
-                    "is_dashing",
-                    "True"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CompareObjectTimer"
-                  },
-                  "parameters": [
-                    "player",
-                    "\"dashtime_cooldown\"",
-                    ">",
-                    "0.1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Arreter"
-                  },
-                  "parameters": [
-                    "player"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "player",
-                    "is_dashing",
-                    "False"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
+              "parameters": []
             }
           ],
           "parameters": []
@@ -9246,25 +9533,60 @@
           "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "name": "",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "bigboitest",
-                "=",
-                "VariableString(bigboibulletsize)"
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "bigboi_debug",
+                    "=",
+                    "VariableString(bigboibulletsize)"
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "dash_debug",
+                    "=",
+                    "player.VariableString(dash_direction)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
-          "events": []
+          "parameters": []
         },
         {
           "colorB": 228,
