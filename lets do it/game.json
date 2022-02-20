@@ -7,20 +7,20 @@
     "revision": 0
   },
   "properties": {
-    "adaptGameResolutionAtRuntime": true,
+    "adaptGameResolutionAtRuntime": false,
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
     "pixelsRounding": false,
     "projectUuid": "ba4b7848-8731-46db-b260-866feca72cef",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "",
+    "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "let's do it!",
     "author": "me: good sofa(might have to change it later idk)",
-    "windowWidth": 1600,
-    "windowHeight": 900,
+    "windowWidth": 700,
+    "windowHeight": 360,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -524,15 +524,6 @@
         "name": "NewObject-10-0.png",
         "smoothed": true,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NewObject-1-5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewObject-1-5.png",
-        "smoothed": true,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -1103,15 +1094,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "NewObject2-1-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewObject2-1-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "BALL-1.png",
         "kind": "image",
         "metadata": "",
@@ -1152,15 +1134,6 @@
         "kind": "image",
         "metadata": "",
         "name": "NewFile-1-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NewObject-1-14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewObject-1-14.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1244,6 +1217,51 @@
         "name": "NewObject-1-4.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject2-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject2-1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "enemy_basic-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "enemy_basic-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1299,27 +1317,27 @@
     {
       "name": "controls_move_up",
       "type": "string",
-      "value": "t"
+      "value": "w"
     },
     {
       "name": "controls_move_down",
       "type": "string",
-      "value": "g"
+      "value": "s"
     },
     {
       "name": "controls_move_left",
       "type": "string",
-      "value": "f"
+      "value": "a"
     },
     {
       "name": "controls_move_right",
       "type": "string",
-      "value": "h"
+      "value": "d"
     },
     {
       "name": "controls_interact",
       "type": "string",
-      "value": "y"
+      "value": "e"
     },
     {
       "name": "weapon4_is_picked_up",
@@ -1361,7 +1379,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.0900000000000007,
+        "zoomFactor": 2.350000000000002,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1423,7 +1441,7 @@
               "name": "testing_thingy"
             },
             {
-              "name": "invisible_hitbox_for_theplayer"
+              "name": "invisible_hitbox_for_the_player"
             }
           ]
         },
@@ -1437,7 +1455,7 @@
               "name": "shootingtrap"
             },
             {
-              "name": "invisible_hitbox_for_theplayer"
+              "name": "invisible_hitbox_for_the_player"
             }
           ]
         },
@@ -1462,7 +1480,7 @@
               "name": "testing_thingy"
             },
             {
-              "name": "invisible_hitbox_for_theplayer"
+              "name": "invisible_hitbox_for_the_player"
             }
           ]
         },
@@ -1473,13 +1491,58 @@
               "name": "invisible_checkpoint"
             },
             {
-              "name": "crosshairhelper"
-            },
-            {
               "name": "lightblocker"
             },
             {
-              "name": "invisible_hitbox_for_theplayer"
+              "name": "invisible_hitbox_for_the_player"
+            },
+            {
+              "name": "crosshairhelper"
+            },
+            {
+              "name": "invisible_hitbox_for_the_enemies"
+            },
+            {
+              "name": "invisible_pathfinding_blocker"
+            }
+          ]
+        },
+        {
+          "name": "DEATHSCREEN",
+          "objects": [
+            {
+              "name": "black_death_screen"
+            },
+            {
+              "name": "ded"
+            },
+            {
+              "name": "respawn_button"
+            },
+            {
+              "name": "I_dont_want_to_play_anymore"
+            }
+          ]
+        },
+        {
+          "name": "ENEMIES",
+          "objects": [
+            {
+              "name": "enemy1_sloim_smart"
+            }
+          ]
+        },
+        {
+          "name": "OBJECTS_ENEMIES_CANT_GO_THROUGH",
+          "objects": [
+            {
+              "name": "wall1"
+            },
+            {
+              "name": "invisible_hitbox_for_the_enemies"
+            },
+            {
+              "name": "shootingtrap"
             }
           ]
         }
@@ -1509,6 +1572,16 @@
           "name": "checkpointY",
           "type": "string",
           "value": ""
+        },
+        {
+          "name": "smart_sloimraycastX",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "smart_sloimraycastY",
+          "type": "string",
+          "value": ""
         }
       ],
       "instances": [
@@ -1521,8 +1594,8 @@
           "name": "player",
           "persistentUuid": "829f69f5-d638-4a8e-8af2-f538f5cf3aa3",
           "width": 0,
-          "x": 458.77777099609375,
-          "y": 403.3333435058594,
+          "x": 501.77777099609375,
+          "y": 425.3333435058594,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -1531,15 +1604,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
-          "layer": "",
+          "height": 64,
+          "layer": "crosshair",
           "locked": false,
           "name": "crosshair",
           "persistentUuid": "b3553b24-fa0a-4e68-ae48-7be771dda40a",
-          "width": 32,
-          "x": 655.75,
-          "y": 303.75,
-          "zOrder": 2,
+          "width": 64,
+          "x": 671.5,
+          "y": 319.5,
+          "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1649,8 +1722,8 @@
           "name": "wall1",
           "persistentUuid": "c7e28a85-a482-4bfb-8381-2ed1f72359dd",
           "width": 64,
-          "x": 481,
-          "y": 130,
+          "x": 480,
+          "y": 128,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -1729,8 +1802,8 @@
           "name": "shootingtrap",
           "persistentUuid": "a90c9dec-e091-470b-8e17-81b42d793213",
           "width": 0,
-          "x": 553.7825927734375,
-          "y": 247.97825622558594,
+          "x": 615.7825927734375,
+          "y": 286.978271484375,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -2494,7 +2567,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_hitbox_for_the_player",
           "persistentUuid": "8df5a65a-c816-4c5c-9c26-871c2430add2",
           "width": 0,
           "x": -96,
@@ -2510,7 +2583,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_hitbox_for_the_player",
           "persistentUuid": "bc874df4-9703-41de-98bf-c70e68e739a2",
           "width": 0,
           "x": -64,
@@ -2526,7 +2599,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_hitbox_for_the_player",
           "persistentUuid": "667e812f-c060-4ae4-a41e-0c45a51620bd",
           "width": 0,
           "x": 64,
@@ -2542,7 +2615,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_hitbox_for_the_player",
           "persistentUuid": "9139c6f9-d895-4674-b3d5-74b1956621d2",
           "width": 0,
           "x": 160,
@@ -2558,7 +2631,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_hitbox_for_the_player",
           "persistentUuid": "d4c09d45-8e57-4c8d-87a4-270731ac89c9",
           "width": 0,
           "x": -192,
@@ -2574,7 +2647,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_hitbox_for_the_player",
           "persistentUuid": "2f6ebae4-9e93-4eb2-855a-2c2137b28231",
           "width": 0,
           "x": -192,
@@ -2590,7 +2663,7 @@
           "height": 117,
           "layer": "",
           "locked": false,
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_hitbox_for_the_player",
           "persistentUuid": "8934ea07-2b32-4356-a9aa-355128c0fb3d",
           "width": 65,
           "x": 490,
@@ -2612,6 +2685,118 @@
           "x": 477,
           "y": 293,
           "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 896,
+          "layer": "deathscreen",
+          "locked": false,
+          "name": "black_death_screen",
+          "persistentUuid": "b55c7dfa-8e80-4f43-a914-2c0e0643570e",
+          "width": 1600,
+          "x": -299,
+          "y": -213,
+          "zOrder": 49,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "deathscreen",
+          "locked": false,
+          "name": "ded",
+          "persistentUuid": "811e48b0-d6c1-4733-abb2-f59af59e1dc5",
+          "width": 288,
+          "x": 217,
+          "y": 38,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "deathscreen",
+          "locked": false,
+          "name": "respawn_button",
+          "persistentUuid": "a13b26a0-d0ff-4a2d-8181-0c7e087d248c",
+          "width": 0,
+          "x": 202,
+          "y": 136,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "deathscreen",
+          "locked": false,
+          "name": "I_dont_want_to_play_anymore",
+          "persistentUuid": "6b7e9cf1-f95f-43d7-ae83-2e5652db00f1",
+          "width": 0,
+          "x": 264,
+          "y": 213,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "enemy1_sloim_smart",
+          "persistentUuid": "ee8eb6ae-4e8f-43e3-b899-2f5d351c3849",
+          "width": 0,
+          "x": 480,
+          "y": 52,
+          "zOrder": 101,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "locked": false,
+          "name": "wall1",
+          "persistentUuid": "bc5ad5e2-bebe-4e54-8edd-c224932cadeb",
+          "width": 192,
+          "x": 256,
+          "y": 224,
+          "zOrder": 102,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "locked": false,
+          "name": "invisible_pathfinding_blocker",
+          "persistentUuid": "78c66521-7df8-4c60-8b32-02d88307a65b",
+          "width": 64,
+          "x": 370,
+          "y": 226,
+          "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2647,12 +2832,27 @@
             {
               "name": "is_dashing",
               "type": "string",
-              "value": ""
+              "value": "false"
             },
             {
               "name": "dash_direction",
               "type": "string",
-              "value": ""
+              "value": "0"
+            },
+            {
+              "name": "has_just_died",
+              "type": "string",
+              "value": "false"
+            },
+            {
+              "name": "iframes_active",
+              "type": "string",
+              "value": "false"
+            },
+            {
+              "name": "dash_alowed",
+              "type": "string",
+              "value": "true"
             }
           ],
           "effects": [],
@@ -2983,7 +3183,36 @@
           ]
         },
         {
-          "name": "Floor",
+          "bold": false,
+          "italic": false,
+          "name": "healthui",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "StayOnScreen",
+              "type": "StayOnScreen::StayOnScreen",
+              "MarginTop": 10,
+              "MarginBottom": 10,
+              "MarginLeft": 10,
+              "MarginRight": 10
+            }
+          ],
+          "string": "test(if you are seeing this something has gone wrong!)",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "crosshairhelper",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -2992,21 +3221,21 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Clean",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Floor_Clean.png",
+                      "image": "lightblocker-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 31.598421096801758,
+                        "y": 31.88577651977539
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3021,230 +3250,27 @@
               ]
             },
             {
-              "name": "Cracks1",
+              "name": "NewObject",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Floor_Cracks1.png",
+                      "image": "NewObject-1-13.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 32.176536560058594,
+                        "y": 32.001094818115234
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Cracks2",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Floor_Cracks2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Cracks3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Floor_Cracks3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Cracks4",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Floor_Cracks4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Cracks5",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Floor_Cracks5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Cracks6",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Floor_Cracks6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Cracks7",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Floor_Cracks7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Ladder",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Floor_Ladder.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 31.825658798217773,
+                        "y": 31.123903274536133
                       },
                       "customCollisionMask": []
                     }
@@ -3418,7 +3444,21 @@
               "value": "null"
             }
           ],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 0.5,
+                "outerStrength": 0.1
+              },
+              "stringParameters": {
+                "color": "#ffffff"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "DestroyOutside",
@@ -4606,75 +4646,6 @@
           ]
         },
         {
-          "name": "crosshairhelper",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "lightblocker-1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "NewObject",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "NewObject-1-13.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32.176536560058594,
-                        "y": 32.001094818115234
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 31.825658798217773,
-                        "y": 31.123903274536133
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "height": 32,
           "name": "wall1",
           "tags": "",
@@ -4685,8 +4656,220 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
+            },
+            {
               "name": "YSort",
               "type": "YSort::YSort"
+            }
+          ]
+        },
+        {
+          "name": "shootingtrap",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "cooldown",
+              "type": "string",
+              "value": "2"
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 5,
+              "HasJustFired": false
+            },
+            {
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 0,
+              "impassable": true
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewObject",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewObject-1-15.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 39.78260803222656,
+                        "y": 30.978260040283203
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 28.200000762939453,
+                        "y": 31.299999237060547
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 22,
+                            "y": 23.899999618530273
+                          },
+                          {
+                            "x": 40.79999923706055,
+                            "y": 23.899999618530273
+                          },
+                          {
+                            "x": 40.79999923706055,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 22.200000762939453,
+                            "y": 39.099998474121094
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "enemy1_sloim_smart",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "agrodistance",
+              "type": "string",
+              "value": "300"
+            },
+            {
+              "name": "speed",
+              "type": "string",
+              "value": "100"
+            },
+            {
+              "name": "pathfinding_helperX",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "pathfinding_helperY",
+              "type": "string",
+              "value": ""
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "cellHeight": 2.5,
+              "cellWidth": 2.5,
+              "extraBorder": 1,
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
+              "angleOffset": 0,
+              "gridOffsetX": 0,
+              "gridOffsetY": 0,
+              "acceleration": 1000,
+              "allowDiagonals": true,
+              "angularMaxSpeed": 180,
+              "maxSpeed": 200,
+              "rotateObject": true
+            }
+          ],
+          "animations": [
+            {
+              "name": "enemy_sloim",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "enemy_basic-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 31.93033218383789,
+                        "y": 32.11065673828125
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 64,
+                            "y": 26.19047737121582
+                          },
+                          {
+                            "x": 64,
+                            "y": 37.50905990600586
+                          },
+                          {
+                            "x": 53.5235481262207,
+                            "y": 57.07427978515625
+                          },
+                          {
+                            "x": 37.7264518737793,
+                            "y": 63.740943908691406
+                          },
+                          {
+                            "x": 26.372953414916992,
+                            "y": 64
+                          },
+                          {
+                            "x": 9.651639938354492,
+                            "y": 55.06148147583008
+                          },
+                          {
+                            "x": 0,
+                            "y": 35.82650375366211
+                          },
+                          {
+                            "x": 0,
+                            "y": 25.99043846130371
+                          },
+                          {
+                            "x": 9.542349815368652,
+                            "y": 8.941258430480957
+                          },
+                          {
+                            "x": 26.482240676879883,
+                            "y": 0
+                          },
+                          {
+                            "x": 37.84836196899414,
+                            "y": 0
+                          },
+                          {
+                            "x": 54.6789665222168,
+                            "y": 9.050546646118164
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -4707,7 +4890,21 @@
               "value": "50"
             }
           ],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 0.5,
+                "outerStrength": 0.2
+              },
+              "stringParameters": {
+                "color": "#ffffff"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "DestroyOutside",
@@ -4767,113 +4964,26 @@
           ]
         },
         {
-          "name": "shootingtrap",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "cooldown",
-              "type": "string",
-              "value": "2"
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "FireBullet",
-              "type": "FireBullet::FireBullet",
-              "FireCooldown": 5,
-              "HasJustFired": false
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewObject",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewObject-1-15.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 39.78260803222656,
-                        "y": 30.978260040283203
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 28.200000762939453,
-                        "y": 31.299999237060547
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 22,
-                            "y": 23.899999618530273
-                          },
-                          {
-                            "x": 40.79999923706055,
-                            "y": 23.899999618530273
-                          },
-                          {
-                            "x": 40.79999923706055,
-                            "y": 38.5
-                          },
-                          {
-                            "x": 22.200000762939453,
-                            "y": 39.099998474121094
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "healthui",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "StayOnScreen",
-              "type": "StayOnScreen::StayOnScreen",
-              "MarginTop": 10,
-              "MarginBottom": 10,
-              "MarginLeft": 10,
-              "MarginRight": 10
-            }
-          ],
-          "string": "test(if you are seeing this something has gone wrong!)",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
           "name": "testing_thingy",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 0.5,
+                "outerStrength": 0
+              },
+              "stringParameters": {
+                "color": "#ffffff"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "FireBullet",
@@ -4888,12 +4998,12 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "NewObject-1-14",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.07999999821186066,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -4936,6 +5046,26 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "dash_debug",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "dash",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         },
         {
           "bold": false,
@@ -5080,6 +5210,34 @@
           ]
         },
         {
+          "name": "smolcavelight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 50,
+            "color": "29;43;143",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "name": "sunlight",
+          "tags": "",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 500,
+            "color": "255;255;255",
+            "debugMode": false,
+            "texture": "NewFile-1-0.png"
+          }
+        },
+        {
           "name": "invisible_checkpoint",
           "tags": "",
           "type": "Sprite",
@@ -5168,26 +5326,31 @@
           ]
         },
         {
-          "name": "sunlight",
-          "tags": "",
-          "type": "Lighting::LightObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "radius": 500,
-            "color": "255;255;255",
-            "debugMode": false,
-            "texture": "NewFile-1-0.png"
-          }
-        },
-        {
           "name": "lightblocker",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "DropShadow",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 1,
+                "blur": 2,
+                "distance": 1,
+                "padding": 0,
+                "quality": 3,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "color": "#000000"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
+            }
+          ],
           "behaviors": [
             {
               "name": "LightObstacleBehavior",
@@ -5256,21 +5419,159 @@
           ]
         },
         {
-          "name": "smolcavelight",
+          "name": "invisible_hitbox_for_the_enemies",
           "tags": "",
-          "type": "Lighting::LightObject",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
-          "content": {
-            "radius": 50,
-            "color": "29;43;143",
-            "debugMode": false,
-            "texture": ""
-          }
+          "behaviors": [
+            {
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "lightblocker-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "NewObject",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewObject-1-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "invisible_hitbox_for_theplayer",
+          "name": "invisible_pathfinding_blocker",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "cost": 2,
+              "impassable": true,
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "lightblocker-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "NewObject",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewObject-1-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "invisible_hitbox_for_the_player",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -5339,9 +5640,29 @@
           ]
         },
         {
-          "bold": false,
+          "height": 32,
+          "name": "black_death_screen",
+          "tags": "",
+          "texture": "NewFile-1-3.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "StayOnScreen",
+              "type": "StayOnScreen::StayOnScreen",
+              "MarginTop": 0,
+              "MarginBottom": 0,
+              "MarginLeft": 0,
+              "MarginRight": 0
+            }
+          ]
+        },
+        {
+          "bold": true,
           "italic": false,
-          "name": "dash_debug",
+          "name": "ded",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -5349,13 +5670,63 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "dash",
+          "string": "You died lol",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "respawn_button",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "button",
+              "type": "MouseHelper::button"
+            }
+          ],
+          "string": "Respawn at the last checkpoint",
           "font": "",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "I_dont_want_to_play_anymore",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "button",
+              "type": "MouseHelper::button"
+            }
+          ],
+          "string": "Quit from the game",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         }
       ],
@@ -5411,11 +5782,48 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "player",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "player",
+                    "",
+                    "\"crosshair\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
             {
               "colorB": 228,
               "colorG": 176,
@@ -5806,6 +6214,18 @@
                         "Right"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "player",
+                        "dash_alowed",
+                        "True"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
@@ -5829,7 +6249,18 @@
                       },
                       "parameters": [
                         "player",
-                        "\"dashtime_cooldown\""
+                        "\"dashtime\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "player",
+                        "\"dash_cooldown\""
                       ],
                       "subInstructions": []
                     },
@@ -5841,6 +6272,53 @@
                       "parameters": [
                         "player",
                         "is_dashing",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "player",
+                        "dash_alowed",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "player",
+                        "\"dash_cooldown\"",
+                        ">",
+                        "0.4"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "player",
+                        "dash_alowed",
                         "True"
                       ],
                       "subInstructions": []
@@ -5893,7 +6371,7 @@
                       },
                       "parameters": [
                         "player",
-                        "\"dashtime_cooldown\"",
+                        "\"dashtime\"",
                         ">",
                         "0.12"
                       ],
@@ -5946,7 +6424,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "guns",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6300,23 +6778,32 @@
                         "1"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "gun1shotgun",
+                        "\"shootingcooldown\"",
+                        ">",
+                        "3"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6324,17 +6811,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6342,17 +6825,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6360,17 +6839,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6378,17 +6853,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6396,17 +6867,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6414,17 +6881,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6432,17 +6895,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6450,17 +6909,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6468,17 +6923,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
                       ],
                       "subInstructions": []
@@ -6486,18 +6937,81 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "Create"
                       },
                       "parameters": [
                         "gun1shotgun",
-                        "FireBullet",
+                        "standardplayerbullet",
                         "gun1shotgun.PointX(\"nozle\")",
                         "gun1shotgun.PointY(\"nozle\")",
-                        "standardplayerbullet",
-                        "crosshairhelper.PointX(\"center\")-30+Random(60)",
-                        "crosshairhelper.PointY(\"center\")-30+Random(60)",
-                        "standardplayerbullet.Variable(speed)",
                         ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "gun1shotgun",
+                        "standardplayerbullet",
+                        "gun1shotgun.PointX(\"nozle\")",
+                        "gun1shotgun.PointY(\"nozle\")",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "gun1shotgun",
+                        "standardplayerbullet",
+                        "gun1shotgun.PointX(\"nozle\")",
+                        "gun1shotgun.PointY(\"nozle\")",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "gun1shotgun",
+                        "standardplayerbullet",
+                        "gun1shotgun.PointX(\"nozle\")",
+                        "gun1shotgun.PointY(\"nozle\")",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceVersPos"
+                      },
+                      "parameters": [
+                        "standardplayerbullet",
+                        "crosshairhelper.PointX(\"origin\")+RandomInRange(-30, 30)",
+                        "crosshairhelper.PointY(\"origin\")+RandomInRange(-30, 30)",
+                        "standardplayerbullet.Variable(speed)",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "gun1shotgun",
+                        "\"shootingcooldown\""
                       ],
                       "subInstructions": []
                     }
@@ -6607,7 +7121,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "gun2(BIGBOI)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -8956,35 +9470,12 @@
           "parameters": []
         },
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CentreCamera"
-              },
-              "parameters": [
-                "",
-                "player",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "collision n' shit",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9029,15 +9520,6 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "BALL",
-              "conditions": [],
-              "actions": [],
               "events": []
             },
             {
@@ -9142,7 +9624,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "traps",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9187,6 +9669,14 @@
                       "subInstructions": []
                     }
                   ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
                   "events": []
                 },
                 {
@@ -9263,7 +9753,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "health",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9272,42 +9762,29 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Health::Health::SetHealth"
-                  },
-                  "parameters": [
-                    "player",
-                    "Health",
-                    "player.Variable(current_health)",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "player",
-                    "ENEMYPROJECTILES_DMG20",
-                    "",
-                    "",
-                    "yes"
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "player",
+                        "ENEMYPROJECTILES_DMG20",
+                        "",
+                        "",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 },
                 {
                   "type": {
@@ -9318,6 +9795,18 @@
                     "player",
                     "is_dashing",
                     "False"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "iframes_active",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -9333,6 +9822,188 @@
                     "current_health",
                     "-",
                     "standardenemybullet.Variable(damage)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"iframes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "iframes_active",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RepeatEveryXSeconds::Repeat"
+                  },
+                  "parameters": [
+                    "",
+                    "\"iframeflickeron\"",
+                    "0.05",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "iframes_active",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "player"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RepeatEveryXSeconds::Repeat"
+                  },
+                  "parameters": [
+                    "",
+                    "\"iframeflickeroff\"",
+                    "0.049",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "iframes_active",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"damage_flash\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "iframes_active",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"damage_flash\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"iframes\"",
+                    ">",
+                    "1\n"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "iframes_active",
+                    "False"
                   ],
                   "subInstructions": []
                 }
@@ -9412,81 +10083,59 @@
           "parameters": []
         },
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "testing_thingy",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "testing_thingy",
-                "PLAYERPROJECTILES",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "FireBullet::FireBullet::FireTowardPosition"
-              },
-              "parameters": [
-                "testing_thingy",
-                "FireBullet",
-                "testing_thingy.PointX(\"\")",
-                "testing_thingy.PointY(\"\")",
-                "standardenemybullet",
-                "player.PointX(\"\")",
-                "player.PointY(\"\")",
-                "standardenemybullet.Variable(speed)",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "2",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "crosshair/cursor",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "testing_thingy",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "testing_thingy",
+                    "PLAYERPROJECTILES",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "testing_thingy",
+                    "FireBullet",
+                    "testing_thingy.PointX(\"\")",
+                    "testing_thingy.PointY(\"\")",
+                    "standardenemybullet",
+                    "player.PointX(\"\")",
+                    "player.PointY(\"\")",
+                    "standardenemybullet.Variable(speed)",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
             {
               "disabled": false,
               "folded": false,
@@ -9538,32 +10187,11 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "name": "",
+          "folded": true,
+          "name": "debugstuff",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "bigboi_debug",
-                    "=",
-                    "VariableString(bigboibulletsize)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -9581,6 +10209,41 @@
                     "player.VariableString(dash_direction)"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "bigboi_debug",
+                    "=",
+                    "VariableString(bigboibulletsize)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": true,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DebuggerTools::EnableDebugDraw"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "yes",
+                    "no",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -9595,18 +10258,352 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
-          "name": "checkpoints",
+          "name": "deth",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "checkpoint",
-              "conditions": [],
-              "actions": [],
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "player",
+                    "current_health",
+                    "<=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "has_just_died",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseHelper::button::isClicked"
+                  },
+                  "parameters": [
+                    "respawn_button",
+                    "button",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "has_just_died",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "player",
+                    "current_health",
+                    "=",
+                    "player.Variable(current_MAX_health)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "player",
+                    "=",
+                    "Variable(checkpointX)",
+                    "=",
+                    "Variable(checkpointY)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "has_just_died",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "has_just_died",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "DEATHSCREEN",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player",
+                    "has_just_died",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "DEATHSCREEN"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "checkpoints ",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": true,
+              "name": "invisible checkpoints",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "player",
+                        "invisible_checkpoint",
+                        "",
+                        "",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "checkpointX",
+                        "=",
+                        "invisible_checkpoint.PointX(\"\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "checkpointY",
+                        "=",
+                        "invisible_checkpoint.PointY(\"\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "current_health",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "current_health",
+                        "=",
+                        "player.Variable(current_MAX_health)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "player",
+                        "=",
+                        "Variable(checkpointX)",
+                        "=",
+                        "Variable(checkpointY)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "current_health",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "current_health",
+                        "=",
+                        "player.Variable(current_MAX_health)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
             },
             {
               "disabled": false,
@@ -9672,92 +10669,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "<=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "=",
-                    "player.Variable(current_MAX_health)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetCenter"
-                  },
-                  "parameters": [
-                    "player",
-                    "=",
-                    "Variable(checkpointX)",
-                    "=",
-                    "Variable(checkpointY)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "<=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "=",
-                    "player.Variable(current_MAX_health)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "DepartScene"
                   },
                   "parameters": [
@@ -9788,171 +10699,6 @@
                     "checkpointY",
                     "=",
                     "player.Y()"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "invisible checkpoints",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "checkpoint",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "player",
-                    "invisible_checkpoint",
-                    "",
-                    "",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "checkpointX",
-                    "=",
-                    "invisible_checkpoint.PointX(\"\")"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "checkpointY",
-                    "=",
-                    "invisible_checkpoint.PointY(\"\")"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "<=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "=",
-                    "player.Variable(current_MAX_health)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetCenter"
-                  },
-                  "parameters": [
-                    "player",
-                    "=",
-                    "Variable(checkpointX)",
-                    "=",
-                    "Variable(checkpointY)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "<=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "player",
-                    "current_health",
-                    "=",
-                    "player.Variable(current_MAX_health)"
                   ],
                   "subInstructions": []
                 }
@@ -10052,7 +10798,7 @@
                   "parameters": [
                     "",
                     "no",
-                    "no"
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -10101,6 +10847,165 @@
               },
               "parameters": [
                 "INVISIBLESTUFF"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"deathscreen\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "enemies",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "slime1",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Raycast"
+                      },
+                      "parameters": [
+                        "player",
+                        "enemy1_sloim_smart.X()",
+                        "enemy1_sloim_smart.Y()",
+                        "AngleBetweenPositions(enemy1_sloim_smart.X(), enemy1_sloim_smart.Y(), player.X(), player.Y())",
+                        "200",
+                        "smart_sloimraycastX",
+                        "smart_sloimraycastY",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Not"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Raycast"
+                          },
+                          "parameters": [
+                            "OBJECTS_ENEMIES_CANT_GO_THROUGH",
+                            "enemy1_sloim_smart.X()",
+                            "enemy1_sloim_smart.Y()",
+                            "AngleBetweenPositions(enemy1_sloim_smart.X(), enemy1_sloim_smart.Y(), player.X(), player.Y())",
+                            "200",
+                            "smart_sloimraycastX",
+                            "smart_sloimraycastY",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "ENEMIES",
+                        "player",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "ENEMIES",
+                        "OBJECTS_ENEMIES_CANT_GO_THROUGH",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "enemy1_sloim_smart",
+                "Pathfinding",
+                "",
+                "player.X()",
+                "player.Y()"
               ],
               "subInstructions": []
             }
@@ -10152,6 +11057,28 @@
           "visibility": false,
           "cameras": [],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 10340744,
+          "ambientLightColorG": 6029040,
+          "ambientLightColorR": 14401976,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "deathscreen",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 150995058,
+          "ambientLightColorG": 6029040,
+          "ambientLightColorR": 11426880,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "crosshair",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -10172,12 +11099,24 @@
           "type": "Lighting::LightObstacleBehavior"
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
           "name": "StayOnScreen",
           "type": "StayOnScreen::StayOnScreen"
         },
         {
           "name": "YSort",
           "type": "YSort::YSort"
+        },
+        {
+          "name": "button",
+          "type": "MouseHelper::button"
         }
       ]
     }
@@ -44149,9 +45088,7 @@
         "spawn",
         "firerate"
       ],
-      "authorIds": [
-        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
-      ],
+      "authorIds": [],
       "dependencies": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
